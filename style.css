@@ -184,6 +184,18 @@ body {
   transform: none !important;
   box-shadow: none !important;
 }
+@media (max-width: 768px) {
+  .nav-dropdown:hover .dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .nav-dropdown.active .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
 
 
 /* =====================
@@ -714,5 +726,6 @@ html[dir="rtl"] .nav-dropdown {
   0%, 100% { border-color: transparent; }
   50% { border-color: #691549; }
 }
+
 
 
