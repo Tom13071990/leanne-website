@@ -470,12 +470,13 @@ footer {
   border-radius: 50%;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
-  .welcome-container {
-    flex-direction: column;
-    text-align: center;
+  .welcome-text h1 {
+    font-size: 38px;
+    line-height: 1.2;
   }
+}
+
 
   .welcome-text h1 {
     font-size: 26px;
@@ -712,3 +713,4 @@ html[dir="rtl"] .nav-dropdown {
   0%, 100% { border-color: transparent; }
   50% { border-color: #691549; }
 }
+
