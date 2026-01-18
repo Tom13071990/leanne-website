@@ -465,7 +465,7 @@ footer {
 }
 
 .welcome-text h1 {
-  font-size: clamp(32px, 6vw, 70px);
+  font-size: 70px;
   line-height: 1.2;
 }
 
@@ -726,6 +726,7 @@ html[dir="rtl"] .nav-dropdown {
   0%, 100% { border-color: transparent; }
   50% { border-color: #691549; }
 }
+
 
 
 
