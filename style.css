@@ -1,0 +1,714 @@
+/* =====================
+   BASE
+===================== */
+body {
+  font-family: Montserrat, sans-serif;
+  margin: 0;
+  text-align: center;
+  overflow-x: hidden;
+  background: #f7f9fc;
+}
+
+/* =====================
+   TOP BAR
+===================== */
+.top-bar {
+  background: #f7f9fc;
+  color: #691549;
+  padding: 8px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.top-left {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.language-switch a {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-left: 6px;
+  border-radius: 8px;
+  background: #691549;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.language-switch a:hover {
+  background: #4e1036;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.language-switch a.active-lang {
+  background: #e37fbd;
+}
+
+/* =====================
+   HEADER / NAV
+===================== */
+.main-header {
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-logo {
+  height: 70px;
+  max-width: 100%;
+}
+
+/* =====================
+   NAV BUTTONS
+===================== */
+.main-nav a {
+  display: inline-block;
+  padding: 10px 18px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background: #691549;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.main-nav a:hover {
+  background: #4e1036;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+.main-nav a.active {
+  background: #e37fbd;
+}
+/* =====================
+   DROPDOWN WITH INTERNAL HEADLINE FIXED
+===================== */
+.nav-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Top nav trigger (main button) */
+.nav-trigger {
+  padding: 10px 18px;
+  border-radius: 10px;
+  background: #691549;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.nav-trigger:hover {
+  background: #4e1036;
+}
+
+/* Dropdown panel */
+.dropdown-menu {
+  position: absolute;
+  top: 115%;
+  left: 0;
+  min-width: 260px;
+  background: white !important;   /* white background */
+  border-radius: 14px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.25s ease;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+/* Show dropdown on hover */
+.nav-dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Internal headline inside dropdown */
+.dropdown-title {
+  background: white;
+  color: #691549;
+  font-weight: bold;
+  padding: 14px 16px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+/* Dropdown items */
+.dropdown-menu a {
+  display: flex !important;        /* logo + text side by side */
+  align-items: center !important;
+  gap: 10px !important;
+  padding: 10px 16px !important;
+  margin: 0 !important;
+  background: transparent !important; /* remove inherited purple background */
+  color: #691549 !important;         /* purple text */
+  font-weight: bold;
+  text-decoration: none !important;
+  border-radius: 0 !important;       /* remove button radius */
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+/* Small logo next to each dropdown item */
+.dropdown-menu a img {
+  width: 30px;
+  height: 18px;
+  object-fit: contain;
+  opacity: 1;
+}
+
+/* Hover effect for items */
+.dropdown-menu a:hover {
+  background: #f3e6ef !important;   /* light highlight */
+  color: #691549 !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+
+/* =====================
+   HERO
+===================== */
+.hero {
+  background: linear-gradient(135deg, white, white);
+  color: rgb(14, 3, 3);
+  padding: 60px 20px;
+}
+
+.hero-logo {
+  width: 400px;
+  max-width: 90%;
+  height: auto;
+  margin: 0 auto 25px;
+  display: block;
+}
+
+.hero h1 {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* =====================
+   BUTTONS
+===================== */
+.btn,
+.bt1,
+.form-button,
+.calendar-button,
+.whatsapp {
+  display: inline-block;
+  padding: 14px 24px;
+  margin: 8px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn { background: #691549; }
+.bt1 { background: #e37fbd; }
+.whatsapp { background: #25D366; }
+.form-button { background: #007bff; }
+.calendar-button { background: #6f42c1; }
+
+.btn:hover,
+.bt1:hover,
+.form-button:hover,
+.calendar-button:hover,
+.whatsapp:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* =====================
+   SECTIONS
+===================== */
+section {
+  padding: 60px 20px;
+  background: white;
+  margin: 20px auto;
+  max-width: 900px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.purple-section {
+  background-color: #691549;
+  color: white;
+}
+/* =====================
+   AREAS OF FOCUS GRID WITH LOGO SHADE
+===================== */
+.areas-focus-section {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.areas-focus-section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #691549;
+}
+
+/* Grid layout */
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Individual focus cards */
+.focus-card {
+  position: relative;
+  background-color: white; /* card is white */
+  color: #691549; /* text color purple */
+  padding: 40px 20px;
+  border-radius: 16px;
+  overflow: hidden;
+  min-height: 250px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* Logo watermark */
+.focus-card::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  background: url('images/logo.png') no-repeat center center;
+  background-size: contain;
+  opacity: 0.40; /* subtle watermark effect */
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.focus-card h3,
+.focus-card p {
+  position: relative; /* text above watermark */
+  z-index: 1;
+  text-align: left;
+}
+
+.focus-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.focus-card p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Hover effect (optional) */
+.focus-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .focus-card {
+    padding: 30px 15px;
+    min-height: 220px;
+  }
+}
+
+
+
+/* =====================
+   PROFILE
+===================== */
+.profile {
+  width: 350px;
+  max-width: 90%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* =====================
+   LISTS
+===================== */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+  padding: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;
+  }
+
+  .main-nav {
+    margin-top: 10px;
+  }
+
+  .main-nav a {
+    margin: 8px 6px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}
+/* =====================
+   WELCOME HERO SECTION
+   Full-section logo watermark
+===================== */
+.welcome-hero {
+  position: relative;
+  padding: 60px 20px;
+  background-color: #691549; /* purple background */
+  overflow: hidden;
+  color: white;
+}
+
+/* Logo watermark across the section */
+.welcome-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/logo.png');
+  background-repeat: repeat;
+  background-size: 80px 80px; /* size of each repeated logo */
+  opacity: 0.03; /* subtle, adjust for brightness */
+  z-index: 0; /* behind content */
+  pointer-events: none;
+}
+
+/* Container above the watermark */
+.welcome-container {
+  position: relative;
+  z-index: 1; /* bring text and photo above watermark */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1100px;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 40px;
+  text-align: left;
+}
+
+/* Headline */
+.welcome-text {
+  flex: 1 1 300px;
+}
+
+.welcome-text h1 {
+  font-size: 70px;
+  line-height: 1.2;
+}
+
+/* Photo */
+.photo-wrapper {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.photo-wrapper .profile {
+  width: 350px;
+  max-width: 90%;
+  border-radius: 50%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .welcome-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .welcome-text h1 {
+    font-size: 26px;
+  }
+
+  .photo-wrapper .profile {
+    width: 250px;
+  }
+}
+/* =====================
+   WHY CHOOSE ME
+===================== */
+.why-choose-me {
+  padding: 60px 20px;
+  background-color: #691549; /* purple background */
+  color: white;
+  text-align: center;
+}
+
+.why-choose-me h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.why-choose-me p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+/* =====================
+   CONTACT INFO GRID (2x2)
+===================== */
+.contact-info {
+  padding: 60px 20px;
+  background-color: #f7f9fc;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-rows: repeat(2, auto);  /* 2 rows */
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Individual cards */
+.contact-card {
+  background-color: #691549; /* purple */
+  color: white;
+  padding: 30px 20px;
+  border-radius: 25px 5px 5px 5px; /* rounded top-left corner */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-card h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.contact-card p {
+  margin: 8px 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Hover effect */
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr; /* stack vertically on mobile */
+  }
+
+  .contact-card {
+    padding: 20px 15px;
+  }
+}
+/* =====================
+   MY VISION SECTION
+===================== */
+.my-vision {
+  padding: 60px 20px;
+  background: #f7b6de;
+  max-width: 900px;
+  margin: 40px auto;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.my-vision h2 {
+  font-size: 50px;
+  color: #691549;
+  margin-bottom: 40px;
+}
+
+.my-vision p {
+  font-size: 18px;
+  line-height: 2;
+  color: #333;
+  max-width: 750px;
+  margin: 0 auto 15px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .my-vision h2 {
+    font-size: 26px;
+  }
+
+  .my-vision p {
+    font-size: 16px;
+  }
+}
+/* =====================
+   RTL SUPPORT (HEBREW)
+===================== */
+html[dir="rtl"] {
+  text-align: right;
+}
+
+html[dir="rtl"] .main-nav {
+  direction: rtl;
+}
+
+html[dir="rtl"] .dropdown-menu {
+  text-align: right;
+}
+
+html[dir="rtl"] .top-left {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .welcome-container {
+  direction: rtl;
+}
+
+html[dir="rtl"] ul {
+  padding-right: 0;
+}
+/* =====================
+   RTL TOP BAR FIX
+===================== */
+html[dir="rtl"] .top-bar {
+  direction: rtl;
+}
+
+html[dir="rtl"] .language-switch {
+  margin-right: auto;   /* דוחף את הכפתורים ימינה */
+  margin-left: 0;
+}
+/* =====================
+   RTL MAIN NAV FIX
+===================== */
+html[dir="rtl"] .main-nav {
+  direction: rtl;
+  text-align: right;
+}
+
+html[dir="rtl"] .main-nav a,
+html[dir="rtl"] .nav-dropdown {
+  margin-left: 0;
+  margin-right: 10px; /* רווח בין כפתורים */
+}
+/* =====================
+   RTL HEADER FULL FIX
+===================== */
+html[dir="rtl"] .header-inner {
+  flex-direction: row-reverse; /* לוגו מימין, ניווט משמאל */
+}
+
+html[dir="rtl"] .main-nav {
+  direction: rtl;
+  justify-content: flex-end;   /* מצמיד לימין */
+  text-align: right;
+}
+
+html[dir="rtl"] .main-nav a,
+html[dir="rtl"] .nav-dropdown {
+  margin-right: 10px;
+  margin-left: 0;
+}
+.main-header {
+  position: relative;
+  z-index: 1000;
+}
+
+.main-nav a {
+  position: relative;
+  z-index: 1001;
+}
+/* Cards reveal + jump */
+.reveal {
+  opacity: 0;
+  transform: translateY(60px) scale(0.98);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  animation: jumpIn 0.9s ease-out forwards;
+}
+
+@keyframes jumpIn {
+  0% { transform: translateY(60px) scale(0.98); opacity: 0; }
+  60% { transform: translateY(-10px) scale(1.02); opacity: 1; }
+  80% { transform: translateY(5px) scale(0.99); }
+  100% { transform: translateY(0) scale(1); }
+}
+
+/* Typing effect */
+.typing {
+  display: inline-block;
+  overflow: hidden;
+  white-space: pre-wrap; /* allows wrapping */
+  border-right: 0;
+  opacity: 0;
+}
+
+.typing.active {
+  opacity: 1;
+  animation: blink 0.7s infinite step-start;
+}
+
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: #691549; }
+}
