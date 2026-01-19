@@ -776,15 +776,9 @@ html[dir="rtl"] .nav-dropdown {
   transition: transform 0.3s ease;
 }
 
-.condition-card:hover {
-  transform: translateY(-5px);
-}
-
 .condition-card img {
   width: 100%;
-  max-width: 800px;
-  aspect-ratio: 4 / 3; /* 800x600 */
-  height: auto;
+  height: 160px;
   object-fit: cover;
   border-radius: 12px;
 }
@@ -797,11 +791,6 @@ html[dir="rtl"] .nav-dropdown {
   font-size: 0.95rem;
   line-height: 1.5;
 }
-
-
-
-
-
 
 
 
