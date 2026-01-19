@@ -224,6 +224,17 @@ body {
   font-size: 18px;
   margin-bottom: 30px;
 }
+.hero-illustration {
+  margin: 24px 0;
+  text-align: center;
+}
+
+.hero-illustration img {
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
 
 /* =====================
    BUTTONS
@@ -802,6 +813,7 @@ html[dir="rtl"] .nav-dropdown {
   font-size: 0.95rem;
   line-height: 1.5;
 }
+
 
 
 
