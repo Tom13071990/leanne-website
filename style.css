@@ -658,6 +658,21 @@ footer {
     font-size: 16px;
   }
 }
+.my-vision {
+  position: relative;
+  padding: 4rem 2rem;
+  color: #ffffff;
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url("images/myofunctional-therapy.jpg"); /* your image path */
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+}
+
 /* =====================
    RTL SUPPORT (HEBREW)
 ===================== */
@@ -813,6 +828,7 @@ html[dir="rtl"] .nav-dropdown {
   font-size: 0.95rem;
   line-height: 1.5;
 }
+
 
 
 
