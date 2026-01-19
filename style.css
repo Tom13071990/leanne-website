@@ -624,15 +624,7 @@ footer {
 /* =====================
    MY VISION SECTION
 ===================== */
-.my-vision {
-  padding: 60px 20px;
-  background: #f7b6de;
-  max-width: 900px;
-  margin: 40px auto;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-  text-align: center;
-}
+
 .my-vision {
   position: relative;
   padding: 60px 20px;
@@ -835,6 +827,7 @@ html[dir="rtl"] .nav-dropdown {
   font-size: 0.95rem;
   line-height: 1.5;
 }
+
 
 
 
