@@ -509,12 +509,9 @@ footer {
 }
 
 .welcome-text h2 {
-  font-size: 1.3rem;
-  font-weight: 500;
-  color: #f3c6dd; /* light pink for contrast */
-  margin-top: 12px;
-  line-height: 1.4;
+  color: yellow !important;
 }
+
 
 
 /* =====================
@@ -744,6 +741,7 @@ html[dir="rtl"] .nav-dropdown {
   0%, 100% { border-color: transparent; }
   50% { border-color: #691549; }
 }
+
 
 
 
