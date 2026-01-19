@@ -499,6 +499,14 @@ footer {
     width: 250px;
   }
 }
+.welcome-text h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #5a5a5a;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
 /* =====================
    WHY CHOOSE ME
 ===================== */
@@ -726,6 +734,7 @@ html[dir="rtl"] .nav-dropdown {
   0%, 100% { border-color: transparent; }
   50% { border-color: #691549; }
 }
+
 
 
 
