@@ -509,12 +509,13 @@ footer {
 }
 
 .welcome-text h2 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 500;
-  color: #5a5a5a;
-  margin-top: 10px;
+  color: #f3c6dd; /* light pink for contrast */
+  margin-top: 12px;
   line-height: 1.4;
 }
+
 
 /* =====================
    WHY CHOOSE ME
@@ -743,10 +744,8 @@ html[dir="rtl"] .nav-dropdown {
   0%, 100% { border-color: transparent; }
   50% { border-color: #691549; }
 }
-.welcome-text h2 {
-  color: red !important;
-  font-size: 40px !important;
-}
+
+
 
 
 
