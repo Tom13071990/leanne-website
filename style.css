@@ -483,22 +483,31 @@ footer {
   border-radius: 50%;
 }
 
+/* Desktop */
+.welcome-text h1 {
+  font-size: 70px;
+  line-height: 1.2;
+}
+
+/* Tablet */
 @media (max-width: 768px) {
   .welcome-text h1 {
     font-size: 38px;
     line-height: 1.2;
-  }
-}
-
-
-  .welcome-text h1 {
-    font-size: 26px;
   }
 
   .photo-wrapper .profile {
     width: 250px;
   }
 }
+
+/* Mobile */
+@media (max-width: 480px) {
+  .welcome-text h1 {
+    font-size: 26px;
+  }
+}
+
 .welcome-text h2 {
   font-size: 1.2rem;
   font-weight: 500;
@@ -734,6 +743,7 @@ html[dir="rtl"] .nav-dropdown {
   0%, 100% { border-color: transparent; }
   50% { border-color: #691549; }
 }
+
 
 
 
