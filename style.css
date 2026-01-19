@@ -785,7 +785,7 @@ html[dir="rtl"] .nav-dropdown {
   width: 100%;
   height: 140px;
   object-fit: cover;
-  border-radius: 15px;
+  border-radius: 8px;
   margin-bottom: 10px;
 }
 
@@ -797,5 +797,6 @@ html[dir="rtl"] .nav-dropdown {
   font-size: 0.95rem;
   line-height: 1.5;
 }
+
 
 
