@@ -783,10 +783,12 @@ html[dir="rtl"] .nav-dropdown {
 
 .condition-card img {
   width: 100%;
-  height: 230px;
-  object-fit: cover;
-  object-position: top center;
-  border-radius: 15px;
+  height: 260px;              /* taller box */
+  object-fit: contain;        /* 👈 NO CROPPING */
+  object-position: center;
+  background: rgba(255,255,255,0.05); /* optional */
+  border-radius: 12px;
+  margin-bottom: 10px;
 }
 
 
@@ -799,6 +801,7 @@ html[dir="rtl"] .nav-dropdown {
   font-size: 0.95rem;
   line-height: 1.5;
 }
+
 
 
 
