@@ -782,10 +782,11 @@ html[dir="rtl"] .nav-dropdown {
 
 .condition-card img {
   width: 100%;
-  height: 180px;
+  max-width: 800px;
+  aspect-ratio: 4 / 3; /* 800x600 */
+  height: auto;
   object-fit: cover;
   border-radius: 12px;
-  margin-bottom: 15px;
 }
 
 .condition-card h3 {
@@ -796,6 +797,7 @@ html[dir="rtl"] .nav-dropdown {
   font-size: 0.95rem;
   line-height: 1.5;
 }
+
 
 
 
