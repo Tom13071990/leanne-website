@@ -649,17 +649,29 @@ footer {
 
 .my-vision h2 {
   font-size: 50px;
-  color: #ffffff;
+  color: #691549;
   margin-bottom: 40px;
 }
 
 .my-vision p {
   font-size: 18px;
   line-height: 2;
-  color: #f2f2f2;
+  color: #333;
   max-width: 750px;
   margin: 0 auto 15px;
 }
+
+/* Mobile */
+@media (max-width: 600px) {
+  .my-vision h2 {
+    font-size: 26px;
+  }
+
+  .my-vision p {
+    font-size: 16px;
+  }
+}
+
 
 
 /* Mobile */
@@ -828,6 +840,7 @@ html[dir="rtl"] .nav-dropdown {
   font-size: 0.95rem;
   line-height: 1.5;
 }
+
 
 
 
