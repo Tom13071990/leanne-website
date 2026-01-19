@@ -631,18 +631,19 @@ footer {
   margin: 40px auto;
   border-radius: 16px;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 
-  /* Background image with shade */
   background-image:
     linear-gradient(
       rgba(0, 0, 0, 0.45),
       rgba(0, 0, 0, 0.45)
     ),
-      url("../images/myofunctional-therapy.jpg");
+    url("images/myofunctional-therapy.jpg");
+
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
+
 .my-vision {
   padding: 60px 20px;
   background: #f7b6de;
@@ -834,6 +835,7 @@ html[dir="rtl"] .nav-dropdown {
   font-size: 0.95rem;
   line-height: 1.5;
 }
+
 
 
 
