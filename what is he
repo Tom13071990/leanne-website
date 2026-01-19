@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+
+  <title>
+    מהו טיפול מיופונקציונלי? | ליאן אלמוג קלינאית תקשורת
+  </title>
+
+  <meta name="description"
+        content="טיפול מיופונקציונלי הוא טיפול המתמקד בתפקוד שרירי הפנים, הלשון והפה. ליאן אלמוג, קלינאית תקשורת מוסמכת, מסבירה למי הטיפול מתאים ואיך הוא עוזר לילדים ומבוגרים.">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="top-left">
+    <span><i class="fa-solid fa-phone"></i> +972-52-472-5990</span>
+    <span class="site-name">ליאן אלמוג קלינאית תקשורת</span>
+  </div>
+
+  <div class="language-switch">
+    <a href="what-is-therapy.html">EN</a>
+    <a href="#" class="active-lang">עברית</a>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="main-header">
+  <div class="header-inner">
+    <img src="images/logo.png" alt="לוגו" class="site-logo">
+
+    <nav class="main-nav">
+      <a href="gpt testing he.html">דף הבית</a>
+
+      <div class="nav-dropdown">
+        <a href="#" class="nav-trigger active">טיפול מיופונקציונלי</a>
+        <div class="dropdown-menu">
+          <a href="what-is-myofunctional-he.html">
+            <img src="images/logo.png" alt="">
+            מהו טיפול מיופונקציונלי
+          </a>
+          <a href="conditions.html">
+            <img src="images/logo.png" alt="">
+            מצבים נפוצים
+          </a>
+        </div>
+      </div>
+
+      <a href="https://forms.gle/QsM7LSHp8JRHLoMSA">צור קשר</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="purple-section">
+  <div class="container">
+    <h1>
+      מהו טיפול מיופונקציונלי?
+    </h1>
+
+    <h2>
+      טיפול תפקודי לשרירי הפנים, הלשון והפה
+    </h2>
+  </div>
+</section>
+
+<!-- CONTENT -->
+<section class="container reveal">
+
+  <p>
+    <strong>טיפול מיופונקציונלי</strong> הוא טיפול המתמקד
+    בתפקוד שרירי הפנים, הלשון, השפתיים והפה, ובהשפעתם
+    על נשימה, דיבור, אכילה, בליעה ויציבה.
+  </p>
+
+  <p>
+    כאשר שרירי הפה אינם פועלים בצורה תקינה,
+    עלולים להופיע קשיים כמו נשימת פה, דיבור לא ברור,
+    בעיות אכילה, דחיקת לשון, נחירות, עייפות,
+    ולעיתים גם השפעה על מבנה הלסת והשיניים.
+  </p>
+
+</section>
+
+<!-- WHAT DOES IT TREAT -->
+<section class="purple-section reveal">
+  <div class="container">
+
+    <h2>
+      במה מטפל טיפול מיופונקציונלי?
+    </h2>
+
+    <ul>
+      <li>נשימת פה ונשימה לא יעילה</li>
+      <li>דחיקת לשון ובליעה לא תקינה</li>
+      <li>קשיי היגוי ודיבור</li>
+      <li>הרגלים אוראליים (מציצת אצבע, נשיכת שפתיים)</li>
+      <li>אכילה בררנית או לעיסה לא יעילה</li>
+      <li>תמיכה בטיפולים אורתודנטיים</li>
+    </ul>
+
+  </div>
+</section>
+
+<!-- WHO IS IT FOR -->
+<section class="container reveal">
+
+  <h2>
+    למי מתאים טיפול מיופונקציונלי?
+  </h2>
+
+  <p>
+    טיפול מיופונקציונלי מתאים
+    <strong>לילדים, בני נוער ומבוגרים</strong>.
+    אצל ילדים, הטיפול מסייע בבניית הרגלים בריאים
+    בשלב קריטי של התפתחות.
+  </p>
+
+  <p>
+    אצל מבוגרים, הטיפול יכול לשפר נשימה,
+    איכות שינה, דיבור ותפקוד יומיומי,
+    ואף להשלים טיפולים רפואיים או דנטליים.
+  </p>
+
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="purple-section reveal">
+  <div class="container">
+
+    <h2>
+      איך נראה תהליך הטיפול?
+    </h2>
+
+    <p>
+      תהליך הטיפול כולל אבחון מקצועי,
+      תרגילים מותאמים אישית,
+      הדרכה להורים ולמטופלים,
+      וליווי מתמשך ליצירת שינוי ארוך טווח.
+    </p>
+
+    <p>
+      הטיפול מתקיים באווירה תומכת, רגועה ומעצימה,
+      תוך שיתוף פעולה מלא עם ההורים
+      ועם אנשי מקצוע נוספים במידת הצורך.
+    </p>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="purple-section reveal">
+  <div class="contact-buttons">
+
+    <a href="https://wa.me/9720524725990?text=שלום, אשמח לקבל מידע על טיפול מיופונקציונלי"
+       class="whatsapp">
+      <i class="fa-brands fa-whatsapp"></i> שיחה בוואטסאפ
+    </a>
+
+    <a href="https://forms.gle/QsM7LSHp8JRHLoMSA"
+       target="_blank"
+       class="form-button">
+      השאירו פרטים
+    </a>
+
+    <a href="https://calendly.com/lalmogslp/30min"
+       target="_blank"
+       class="calendar-button">
+      קביעת ייעוץ
+    </a>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>
+    © 2026 ליאן אלמוג | קלינאית תקשורת ומטפלת מיופונקציונלית
+  </p>
+</footer>
+
+</body>
+</html>
