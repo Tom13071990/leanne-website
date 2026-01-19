@@ -761,6 +761,42 @@ html[dir="rtl"] .nav-dropdown {
   0%, 100% { border-color: transparent; }
   50% { border-color: #691549; }
 }
+.conditions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.condition-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.condition-card:hover {
+  transform: translateY(-5px);
+}
+
+.condition-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.condition-card h3 {
+  margin: 10px 0;
+}
+
+.condition-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
 
 
 
