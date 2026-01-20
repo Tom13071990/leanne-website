@@ -826,7 +826,7 @@ html[dir="rtl"] .nav-dropdown {
 ===================== */
 .about-me h1 {
   font-size: 48px;  /* adjust the size you want */
-  color: #691549;   /* optional: match your theme */
+  color: #black;   /* optional: match your theme */
   margin-bottom: 20px;
 }
 
@@ -836,6 +836,7 @@ html[dir="rtl"] .nav-dropdown {
     font-size: 28px;
   }
 }
+
 
 
 
