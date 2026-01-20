@@ -821,6 +821,22 @@ html[dir="rtl"] .nav-dropdown {
   line-height: 1.5;
 }
 
+/* =====================
+   ABOUT ME SECTION H1
+===================== */
+.about-me h1 {
+  font-size: 48px;  /* adjust the size you want */
+  color: #691549;   /* optional: match your theme */
+  margin-bottom: 20px;
+}
+
+/* Mobile adjustment */
+@media (max-width: 600px) {
+  .about-me h1 {
+    font-size: 28px;
+  }
+}
+
 
 
 
