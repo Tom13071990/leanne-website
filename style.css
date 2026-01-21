@@ -298,6 +298,37 @@ section {
   font-size: 22px;
   font-weight: 500;
 }
+/* Centered image inside section */
+.section-image {
+  display: block;
+  margin: 30px auto;        /* centers horizontally + spacing */
+  max-width: 100%;          /* never overflow section */
+  height: auto;             /* keep aspect ratio */
+  border-radius: 12px;      /* optional – matches your design */
+}
+
+/* Size variants (optional but powerful) */
+.section-image.small {
+  max-width: 300px;
+}
+
+.section-image.medium {
+  max-width: 500px;
+}
+
+.section-image.large {
+  max-width: 700px;
+}
+
+/* Mobile safety */
+@media (max-width: 600px) {
+  .section-image.small,
+  .section-image.medium,
+  .section-image.large {
+    max-width: 100%;
+  }
+}
+
 
 /* =====================
    AREAS OF FOCUS GRID WITH LOGO SHADE
@@ -858,6 +889,7 @@ html[dir="rtl"] .dropdown-menu {
   background: #59339d;
   transform: translateY(-2px);
 }
+
 
 
 
