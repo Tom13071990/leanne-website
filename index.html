@@ -254,57 +254,85 @@
 
 </footer>
 
-<script> document.addEventListener("DOMContentLoaded", function() {
-  const reveals = document.querySelectorAll(".reveal");
+<!-- Reveal + Typing -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const reveals = document.querySelectorAll(".reveal");
 
-  function revealOnScroll() {
-    for (let i = 0; i < reveals.length; i++) {
-      const element = reveals[i];
-      const windowHeight = window.innerHeight;
-      const elementTop = element.getBoundingClientRect().top;
-      const elementVisible = 100;
+    function revealOnScroll() {
+      for (let i = 0; i < reveals.length; i++) {
+        const element = reveals[i];
+        const windowHeight = window.innerHeight;
+        const elementTop = element.getBoundingClientRect().top;
+        const elementVisible = 100;
 
-      if (elementTop < windowHeight - elementVisible) {
-        if (!element.classList.contains("active")) {
-          element.classList.add("active");
-          // Start typing for children inside this card
-          const typers = element.querySelectorAll(".typing");
-          typers.forEach((el, index) => {
-            setTimeout(() => {
-              typeText(el, el.getAttribute("data-text"), 30);
-            }, index * 600); // delay between lines
-          });
+        if (elementTop < windowHeight - elementVisible) {
+          if (!element.classList.contains("active")) {
+            element.classList.add("active");
+
+            const typers = element.querySelectorAll(".typing");
+            typers.forEach((el, index) => {
+              setTimeout(() => {
+                typeText(el, el.getAttribute("data-text"), 30);
+              }, index * 600);
+            });
+          }
         }
       }
     }
-  }
 
-  window.addEventListener("scroll", revealOnScroll);
-  revealOnScroll(); // trigger on load
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll();
 
-  function typeText(element, text, speed = 30) {
-    let i = 0;
-    element.textContent = "";
-    element.classList.add("active"); // show cursor
-    function type() {
-      if (i < text.length) {
-        element.textContent += text[i];
-        i++;
-        setTimeout(type, speed);
-      } else {
-        element.style.borderRight = "none"; // remove cursor after typing
+    function typeText(element, text, speed = 30) {
+      let i = 0;
+      element.textContent = "";
+      element.classList.add("active");
+
+      function type() {
+        if (i < text.length) {
+          element.textContent += text[i];
+          i++;
+          setTimeout(type, speed);
+        } else {
+          element.style.borderRight = "none";
+        }
       }
+      type();
     }
-    type();
-  }
-});
-
-
+  });
 </script>
+
+<!-- Mobile Dropdown -->
+<script>
+  document.querySelectorAll('.nav-trigger').forEach(trigger => {
+    trigger.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const dropdown = this.parentElement;
+
+      document.querySelectorAll('.nav-dropdown').forEach(d => {
+        if (d !== dropdown) d.classList.remove('active');
+      });
+
+      dropdown.classList.toggle('active');
+    });
+  });
+
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('.nav-dropdown')) {
+      document.querySelectorAll('.nav-dropdown').forEach(d => {
+        d.classList.remove('active');
+      });
+    }
+  });
+</script>
+
 
 
 </body>
 </html>
+
 
 
 
