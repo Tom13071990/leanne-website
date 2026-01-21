@@ -1,18 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://www.leanneslp.com/</loc>
-    <lastmod>2026-01-21</lastmod>
-    <priority>1.0</priority>
-  </url>
 
   <url>
-    <loc>https://www.leanneslp.com/about.html</loc>
-    <priority>0.8</priority>
+    <loc>https://www.leanneslp.com/</loc>
   </url>
 
   <url>
     <loc>https://www.leanneslp.com/index.html</loc>
-    <priority>0.8</priority>
   </url>
+
+  <url>
+    <loc>https://www.leanneslp.com/about.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.leanneslp.com/about%20he.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.leanneslp.com/conditions.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.leanneslp.com/conditions-he.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.leanneslp.com/what-is-myofunctional.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.leanneslp.com/what-is-therapy-he.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.leanneslp.com/craniofacial-en.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.leanneslp.com/Craniofacial%20Therapy%20he.html</loc>
+  </url>
+
 </urlset>
