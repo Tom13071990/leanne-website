@@ -169,9 +169,87 @@
 <footer>
   <p>© 2026 Leanne Almog, Speech-Language Pathologist | All Rights Reserved</p>
 </footer>
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     DROPDOWN (works everywhere)
+     ========================= */
+  document.querySelectorAll('.nav-trigger').forEach(trigger => {
+    trigger.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const dropdown = this.parentElement;
+
+      document.querySelectorAll('.nav-dropdown').forEach(d => {
+        if (d !== dropdown) d.classList.remove('active');
+      });
+
+      dropdown.classList.toggle('active');
+    });
+  });
+
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('.nav-dropdown')) {
+      document.querySelectorAll('.nav-dropdown').forEach(d => {
+        d.classList.remove('active');
+      });
+    }
+  });
+
+
+  /* =========================
+     REVEAL + TYPING (only if exists)
+     ========================= */
+  const reveals = document.querySelectorAll(".reveal");
+  if (reveals.length === 0) return; // 👈 nothing to do on this page
+
+  function revealOnScroll() {
+    reveals.forEach(element => {
+      const windowHeight = window.innerHeight;
+      const elementTop = element.getBoundingClientRect().top;
+      const elementVisible = 100;
+
+      if (elementTop < windowHeight - elementVisible) {
+        if (!element.classList.contains("active")) {
+          element.classList.add("active");
+
+          const typers = element.querySelectorAll(".typing");
+          typers.forEach((el, index) => {
+            setTimeout(() => {
+              typeText(el, el.getAttribute("data-text"), 30);
+            }, index * 600);
+          });
+        }
+      }
+    });
+  }
+
+  function typeText(element, text, speed = 30) {
+    let i = 0;
+    element.textContent = "";
+    element.classList.add("active");
+
+    function type() {
+      if (i < text.length) {
+        element.textContent += text[i++];
+        setTimeout(type, speed);
+      } else {
+        element.style.borderRight = "none";
+      }
+    }
+    type();
+  }
+
+  window.addEventListener("scroll", revealOnScroll);
+  revealOnScroll();
+});
+</script>
+
 
 </body>
 </html>
+
 
 
 
