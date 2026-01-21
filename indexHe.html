@@ -220,12 +220,42 @@
 
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     DROPDOWN (works everywhere)
+     ========================= */
+  document.querySelectorAll('.nav-trigger').forEach(trigger => {
+    trigger.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const dropdown = this.parentElement;
+
+      document.querySelectorAll('.nav-dropdown').forEach(d => {
+        if (d !== dropdown) d.classList.remove('active');
+      });
+
+      dropdown.classList.toggle('active');
+    });
+  });
+
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('.nav-dropdown')) {
+      document.querySelectorAll('.nav-dropdown').forEach(d => {
+        d.classList.remove('active');
+      });
+    }
+  });
+
+
+  /* =========================
+     REVEAL + TYPING (only if exists)
+     ========================= */
   const reveals = document.querySelectorAll(".reveal");
+  if (reveals.length === 0) return; // 👈 nothing to do on this page
 
   function revealOnScroll() {
-    for (let i = 0; i < reveals.length; i++) {
-      const element = reveals[i];
+    reveals.forEach(element => {
       const windowHeight = window.innerHeight;
       const elementTop = element.getBoundingClientRect().top;
       const elementVisible = 100;
@@ -242,20 +272,17 @@ document.addEventListener("DOMContentLoaded", function() {
           });
         }
       }
-    }
+    });
   }
-
-  window.addEventListener("scroll", revealOnScroll);
-  revealOnScroll();
 
   function typeText(element, text, speed = 30) {
     let i = 0;
     element.textContent = "";
     element.classList.add("active");
+
     function type() {
       if (i < text.length) {
-        element.textContent += text[i];
-        i++;
+        element.textContent += text[i++];
         setTimeout(type, speed);
       } else {
         element.style.borderRight = "none";
@@ -263,21 +290,18 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     type();
   }
+
+  window.addEventListener("scroll", revealOnScroll);
+  revealOnScroll();
 });
 </script>
-  <!-- Your page content -->
 
-  <script>
-    document.querySelector('.nav-trigger').addEventListener('click', function (e) {
-      e.preventDefault();
-      this.parentElement.classList.toggle('active');
-    });
-  </script>
 </body>
 </html>
 
 </body>
 </html>
+
 
 
 
