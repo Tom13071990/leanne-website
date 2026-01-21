@@ -299,8 +299,42 @@ document.addEventListener("DOMContentLoaded", function () {
 </body>
 </html>
 
+
+   <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const triggers = document.querySelectorAll(".nav-trigger");
+
+  triggers.forEach(trigger => {
+    trigger.addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation(); // 🔑 מונע סגירה מיידית במובייל
+
+      const dropdown = this.closest(".nav-dropdown");
+
+      // סגור אחרים
+      document.querySelectorAll(".nav-dropdown").forEach(d => {
+        if (d !== dropdown) d.classList.remove("active");
+      });
+
+      dropdown.classList.toggle("active");
+    });
+  });
+
+  // סגירה בלחיצה מחוץ לתפריט
+  document.addEventListener("click", function () {
+    document.querySelectorAll(".nav-dropdown").forEach(d => {
+      d.classList.remove("active");
+    });
+  });
+
+});
+</script>
+
+
 </body>
 </html>
+
 
 
 
