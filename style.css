@@ -843,18 +843,23 @@ html[dir="rtl"] .dropdown-menu {
   right: 0;
 }
 
-/* Keep calendar-button style inside nav */
-.main-nav a.calendar-button {
-  background: #6f42c1 !important;
-  color: white !important;
-  padding: 14px 24px !important;
-  border-radius: 10px !important;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2) !important;
+/* CTA button inside nav */
+.main-nav .nav-cta {
+  background: #6f42c1; /* same as calendar-button */
+  color: white;
+  padding: 10px 18px;
+  border-radius: 12px;
+  font-weight: bold;
+  margin-left: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
 
-.main-nav a.calendar-button:hover {
-  background: #59339d !important;
+.main-nav .nav-cta:hover {
+  background: #59339d;
+  transform: translateY(-2px);
 }
+
+
 
 
 
