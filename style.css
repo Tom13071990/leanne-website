@@ -843,6 +843,19 @@ html[dir="rtl"] .dropdown-menu {
   right: 0;
 }
 
+/* Keep calendar-button style inside nav */
+.main-nav a.calendar-button {
+  background: #6f42c1 !important;
+  color: white !important;
+  padding: 14px 24px !important;
+  border-radius: 10px !important;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2) !important;
+}
+
+.main-nav a.calendar-button:hover {
+  background: #59339d !important;
+}
+
 
 
 
