@@ -837,6 +837,12 @@ html[dir="rtl"] .nav-dropdown {
     font-size: 28px;
   }
 }
+/* RTL dropdown positioning fix */
+html[dir="rtl"] .dropdown-menu {
+  left: auto;
+  right: 0;
+}
+
 
 
 
